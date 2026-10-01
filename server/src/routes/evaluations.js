@@ -8,6 +8,9 @@ import {
 
 const router = Router();
 
-// TODO: wire up the three routes in README.md section 2 and the summary route in section 3.
+router.get('/summary', getEvaluationSummary);
+router.get('/', getAllEvaluations);
+router.post('/', createEvaluation);
+router.get('/:id', getEvaluation);
 
 export default router;
